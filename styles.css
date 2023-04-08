@@ -1,0 +1,28 @@
+.container{
+  padding: 23px;
+  border: 3px solid black;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  height: 380px;
+}
+.grid{
+  display: grid;
+  padding: 23px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2px;
+}
+.button{
+  height: 110px;
+  width:120px;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #c4c4c4;
+  font-size: 0px;
+  color: #333;
+  padding: 10px;
+}
+.button:hover{
+  background-color: aquamarine;
+  transition: 0.8s;
+}
