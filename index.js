@@ -53,61 +53,24 @@ function checkIfXWin(key){
             }
         }
     }
-    var count= 0;
-    for(var i=1;i<3;i++){
-        if(matrix[0][i]===1 && matrix[0][i-1]===1){
-            count++;
-        }
-    }
-    if(count===2){
+    if(matrix[0][0]===1 && matrix[0][1]===1 && matrix[0][2]===1){
         return true;
     }
-    count= 0;
-    for(var i=1;i<3;i++){
-        if(matrix[1][i]===1 && matrix[1][i-1]===1){
-            count++;
-        }
-    }
-    if(count===2){
+    if(matrix[1][0]===1 && matrix[1][1]===1 && matrix[1][2]===1){
         return true;
     }
-    count= 0;
-    for(var i=1;i<3;i++){
-        if(matrix[2][i]===1 && matrix[2][i-1]===1){
-            count++;
-        }
-    }
-    if(count===2){
+    if(matrix[2][0]===1 && matrix[2][1]===1 && matrix[2][2]===1){
         return true;
     }
-    count= 0;
-    for(var i=1;i<3;i++){
-        if(matrix[i][0]===1 && matrix[i-1][0]===1){
-            count++;
-        }
-    }
-    if(count===2){
+    if(matrix[0][0]===1 && matrix[1][0]===1 && matrix[2][0]===1){
         return true;
     }
-    count= 0;
-    for(var i=1;i<3;i++){
-        if(matrix[i][1]===1 && matrix[i-1][1]===1){
-            count++;
-        }
-    }
-    if(count===2){
+    if(matrix[0][1]===1 && matrix[1][1]===1 && matrix[2][1]===1){
         return true;
     }
-    count= 0;
-    for(var i=1;i<3;i++){
-        if(matrix[i][2]===1 && matrix[i-1][2]===1){
-            count++;
-        }
-    }
-    if(count===2){
+    if(matrix[0][2]===1 && matrix[1][2]===1 && matrix[2][2]===1){
         return true;
     }
-    count= 0;
     if(matrix[0][0]===1 && matrix[1][1]===1 && matrix[2][2]===1){
         return true;
     }
@@ -127,61 +90,24 @@ function checkIfOWin(key){
             }
         }
     }
-    var count= 0;
-    for(var i=1;i<3;i++){
-        if(matrix[0][i]===2 && matrix[0][i-1]===2){
-            count++;
-        }
-    }
-    if(count===2){
+    if(matrix[0][0]===2 && matrix[0][1]===2 && matrix[0][2]===2){
         return true;
     }
-    count= 0;
-    for(var i=1;i<3;i++){
-        if(matrix[1][i]===2 && matrix[1][i-1]===2){
-            count++;
-        }
-    }
-    if(count===2){
+    if(matrix[1][0]===2 && matrix[1][1]===2 && matrix[1][2]===2){
         return true;
     }
-    count= 0;
-    for(var i=1;i<3;i++){
-        if(matrix[2][i]===2 && matrix[2][i-1]===2){
-            count++;
-        }
-    }
-    if(count===2){
+    if(matrix[2][0]===2 && matrix[2][1]===2 && matrix[2][2]===2){
         return true;
     }
-    count= 0;
-    for(var i=1;i<3;i++){
-        if(matrix[i][0]===2 && matrix[i-1][0]===2){
-            count++;
-        }
-    }
-    if(count===2){
+    if(matrix[0][0]===2 && matrix[1][0]===2 && matrix[2][0]===2){
         return true;
     }
-    count= 0;
-    for(var i=1;i<3;i++){
-        if(matrix[i][1]===2 && matrix[i-1][1]===2){
-            count++;
-        }
-    }
-    if(count===2){
+    if(matrix[0][1]===2 && matrix[1][1]===2 && matrix[2][1]===2){
         return true;
     }
-    count= 0;
-    for(var i=1;i<3;i++){
-        if(matrix[i][2]===2 && matrix[i-1][2]===2){
-            count++;
-        }
-    }
-    if(count===2){
+    if(matrix[0][2]===2 && matrix[1][2]===2 && matrix[2][2]===2){
         return true;
     }
-    count= 0;
     if(matrix[0][0]===2 && matrix[1][1]===2 && matrix[2][2]===2){
         return true;
     }
